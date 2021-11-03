@@ -1,0 +1,46 @@
+.bannerContainer {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+/* TEXT COL */
+.firstCol {
+  padding-left: 1rem;
+  border: 1px solid green;
+}
+
+.firstCol h1 {
+  font-family: "Cooper Lt BT";
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.firstCol h2 {
+  font-family: "Domine";
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 2rem 0rem;
+}
+
+/* IMAGE COL */
+.secondCol {
+  border: 1px solid blue;
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 992px) {
+  .bannerContainer {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .secondCol img {
+    width: 230px;
+    height: 230px;
+  }
+}

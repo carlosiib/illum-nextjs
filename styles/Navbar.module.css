@@ -7,9 +7,24 @@
   max-width: 1400px;
 }
 
+.navbarList {
+  border: 1px solid yellow;
+}
+.navbarList ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
 .navbarList ul li {
+  font-family: "Domine";
   display: inline-block;
   margin-right: 2rem;
+}
+
+.navbarList ul li a {
+  font-family: "Domine";
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 
 .navbarList ul li a:hover {
@@ -18,6 +33,7 @@
 
 .navbarList ul li:last-child {
   padding: 8px 24px;
+  line-height: 1.5;
   color: var(--white-color);
   background-color: var(--primary-color);
   border-radius: var(--b-radius);
