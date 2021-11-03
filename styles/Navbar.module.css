@@ -1,0 +1,40 @@
+.navbarContainer {
+  padding-top: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.navbarList ul li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.navbarList ul li a:hover {
+  color: var(--primary-color);
+}
+
+.navbarList ul li:last-child {
+  padding: 8px 24px;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-radius: var(--b-radius);
+  box-shadow: var(--btn-shadow);
+}
+
+.navbarList ul li:last-child a {
+  color: var(--white-color);
+}
+
+.downArrow {
+  margin-left: 6px;
+  border: solid;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  vertical-align: middle;
+}

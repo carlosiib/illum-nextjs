@@ -5,13 +5,16 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Illumidesk</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Illumidesk LMS" />
         <link rel="icon" href="/favicon.ico" />
+
+        <title>Illumidesk</title>
       </Head>
 
       <main >
-        HELLO STAGING
+        home
       </main>
 
 

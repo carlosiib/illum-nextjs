@@ -1,9 +1,20 @@
+:root {
+  --primary-color: #52b56b;
+  --secondary-color: #3f85ca;
+  --third-color: #ecebf3;
+  --white-color: #fff;
+  --black-color: #000;
+  --b-radius: 8px;
+  --btn-shadow: 0 1px 4px rgb(26 26 67 / 10%);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
 }
 
 a {
@@ -13,4 +24,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.el {
+  color: var(--primary-color);
+  font-size: 48px;
 }
