@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Banner from '../components/Banner'
+
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -14,7 +16,14 @@ export default function Home() {
       </Head>
 
       <main >
-        home
+        <Banner
+          title="TITLE"
+          subtitle="subtitle"
+          path="svg/banner-instructor-learner.svg"
+          alt="Instructors and learners"
+          width="540"
+          height="540"
+        />
       </main>
 
 
