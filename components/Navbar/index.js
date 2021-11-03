@@ -17,27 +17,37 @@ const Navbar = () => {
       <div className={styles.navbarList}>
         <ul>
           <li>
-            <Link href="/">Features</Link>
+            <Link href="/">
+              <a>Features</a>
+            </Link>
           </li>
           <li>
-            <Link href="/blog">Blog</Link>
+            <Link href="/blog">
+              <a>Blog</a>
+            </Link>
           </li>
           <li>
-            <Link href="/pricing">Pricing</Link>
+            <Link href="/pricing">
+              <a>Pricing</a>
+            </Link>
           </li>
           <li>
 
-            <Link href="/resources">
+            <Link href="/">
               <a>Resource
                 <span className={styles.downArrow}></span>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/about-us">About us</Link>
+            <Link href="/about">
+              <a>About us</a>
+            </Link>
           </li>
           <li>
-            <Link href="/blog">FREE TRIAL</Link>
+            <Link href="/blog">
+              <a>FREE TRIAL</a>
+            </Link>
           </li>
         </ul>
       </div>
