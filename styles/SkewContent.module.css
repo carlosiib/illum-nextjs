@@ -1,0 +1,30 @@
+/* TEXT CONTENT */
+.skewContent {
+  width: 50%;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 4rem;
+}
+.skewContent h6,
+.skewContent p {
+  margin: 0;
+}
+
+.skewContent h6 {
+  font-family: "Cooper Lt BT";
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.skewContent p {
+  font-family: "Domine";
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* IMAGE CONTAINER */
+.skewImage {
+  width: 50%;
+  border: 1px solid cyan;
+}

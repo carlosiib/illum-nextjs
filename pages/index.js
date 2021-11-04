@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Banner from '../components/Banner'
 import StartAcademyDesktop from '../components/StartAcademyDesktop'
 import FreeTrial from '../components/FreeTrial'
+import HowDoesItWorks from '../components/HowDoesItWorks/'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -28,6 +29,15 @@ export default function Home() {
         />
         <StartAcademyDesktop />
         <FreeTrial source="main" />
+        <HowDoesItWorks />
+        <Banner
+          title="Interactive Learning Environments for Data Heroes"
+          subtitle="Interactive teaching and learning concept powered by web-enabled Data Science Notebooks."
+          path="svg/banner-instructor-learner.svg"
+          alt="Instructors and learners"
+          width="540"
+          height="520"
+        />
       </main>
 
 

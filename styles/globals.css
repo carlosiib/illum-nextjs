@@ -52,3 +52,40 @@ a {
 .path-sec-btn {
   background-color: var(--secondary-color);
 }
+
+/* SKEW CONTENT */
+.skewDescription {
+  display: flex;
+  /* height: 600px; */
+}
+
+.firstSkewContent {
+  position: absolute;
+  width: 50%;
+  top: 10px;
+  right: 0;
+  border: 1px solid yellow;
+  padding: 0rem 4rem;
+}
+
+.firstSkewContent h6 {
+  font-family: "Cooper Lt BT";
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.firstSkewContent p {
+  font-family: "Domine";
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.img-text {
+  flex-direction: row-reverse;
+}
+
+.sticky-img {
+  position: sticky;
+  top: 0;
+}
