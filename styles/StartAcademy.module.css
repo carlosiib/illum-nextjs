@@ -29,8 +29,12 @@
   z-index: 10;
 }
 
-.buttonRow img {
-  margin-right: 14px;
+.btnImage {
+  pointer-events: none;
+}
+
+.btnText {
+  margin-left: 14px;
 }
 
 .svgsRow {
@@ -82,11 +86,6 @@
   justify-content: center;
   flex-direction: row-reverse;
   cursor: pointer;
-}
-
-.pathButtons button img {
-  margin-right: 14px;
-  pointer-events: none;
 }
 
 /* PATH CONTENT */

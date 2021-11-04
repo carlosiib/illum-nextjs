@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Image from 'next/image'
 import styles from '../../styles/StartAcademy.module.css'
 
 const StartAcademyDesktop = () => {
@@ -17,8 +18,14 @@ const StartAcademyDesktop = () => {
 
       <div className={styles.buttonRow}>
         <button>
-          Start your own Academy
-          <img src="/svg/btn-checkmark.svg" alt="Checkmark icon" width="16" height="18" />
+          <span className={styles.btnText}>Start your own Academy</span>
+          <Image
+            src="/svg/btn-checkmark.svg"
+            alt="Checkmark icon"
+            width={16}
+            height={18}
+            className={styles.btnImage}
+          />
         </button>
       </div>
 
@@ -80,26 +87,44 @@ const StartAcademyDesktop = () => {
         <button
           onClick={handlePathContent}
           data-content-for="Content Managers">
-          For Content Managers
-          <img src="/svg/btn-code.svg" alt="Content managers terminal" width="20" height="20" />
+          <span className={styles.btnText}>For Content Managers</span>
+          <Image
+            src="/svg/btn-code.svg"
+            alt="Content managers terminal"
+            width={20}
+            height={20}
+            className={styles.btnImage}
+          />
         </button>
         <button
           onClick={handlePathContent}
           data-content-for="Learners">
-          For Learners
-          <img src="/svg/btn-book.svg" alt="Content managers terminal" width="16" height="18" />
+          <span className={styles.btnText}>For Learners</span>
+          <Image
+            src="/svg/btn-book.svg"
+            alt="Content managers terminal"
+            width={16}
+            height={18}
+            className={styles.btnImage}
+          />
         </button>
         <button
           onClick={handlePathContent}
           data-content-for="Instructors">
-          For Instructors
-          <img src="/svg/btn-instructor.svg" alt="Content managers terminal" width="20" height="20" />
+          <span className={styles.btnText}>For Instructors</span>
+          <Image
+            src="/svg/btn-instructor.svg"
+            alt="Content managers terminal"
+            width={20}
+            height={20}
+            className={styles.btnImage}
+          />
         </button>
       </div>
 
       {/* PATH CONTENT */}
       <div className={styles.pathContent}>
-        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+        Lorem trolling
       </div>
 
     </div>
