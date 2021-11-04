@@ -69,7 +69,6 @@
   z-index: 10;
   width: 30%;
   border: none;
-  background-color: var(--primary-color);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 0;

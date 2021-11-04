@@ -44,3 +44,11 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.path-main-btn {
+  background-color: var(--primary-color);
+}
+
+.path-sec-btn {
+  background-color: var(--secondary-color);
+}
