@@ -1,0 +1,48 @@
+[
+  {
+  "customers": [
+      {
+          "id": 1,
+          "image": "/images/university-of-michigan.webp",
+          "width": "93",
+          "height": "98",
+          "alt": "University of Michigan logo"
+      },
+      {
+          "id": 2,
+          "image": "/images/arizona-state-university.webp",
+           "width": "92",
+          "height": "54",
+          "alt": "Arizona state University logo"
+      },
+      {
+          "id": 3,
+          "image": "/images/intel-corporation.webp",
+          "width": "92",
+          "height": "61",
+          "alt": "Intel Corporation logo"
+      },
+      {
+          "id": 4,
+          "image": "/images/georgia-tech.webp",
+          "width": "92",
+          "height": "43",
+          "alt": "Georgia Tech Logo"
+      },
+      {
+        "id": 5,
+        "image": "/images/emory-university.webp",
+        "width": "92",
+        "height": "105",
+        "alt": "Emory University logo"
+    },
+    {
+      "id": 6,
+      "image": "./images/flatiron-school.webp",
+      "width": "93",
+      "height": "93",
+      "alt": "Flatiron school logo"
+  }
+  ]
+}
+]

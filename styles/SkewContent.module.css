@@ -5,7 +5,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* padding: 10rem 4rem; */
   padding: 10rem 4rem 10rem 0rem;
 }
 .skewContent h6,

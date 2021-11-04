@@ -106,3 +106,16 @@ a {
 .skewDescription:last-child {
   margin-bottom: 0rem;
 }
+
+/*Customers*/
+.customersContainer {
+  margin-bottom: 5rem;
+}
+
+.customersContainer h6 {
+  font-family: "Cooper Lt BT";
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 4rem;
+  text-align: center;
+}

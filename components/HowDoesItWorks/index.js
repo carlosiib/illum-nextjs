@@ -48,7 +48,6 @@ const HowDoesItWorks = () => {
   }, [inView, animateStep, imageAnimation])
 
   function handleDownAnimation(options) {
-    console.log("change state animation", options)
     setAnimateStep({ change: true, options })
   }
 

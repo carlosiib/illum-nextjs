@@ -5,7 +5,6 @@ import styles from '../../styles/SkewContent.module.css'
 const SkewContent = ({ order, isFirstSkew, title, subtitle, thresholdAt = 1, stepNumber, downAnimation }) => {
 
   // Intersection observer Hook for animations
-  // { threshold: 0.1 }
   const { ref, inView } = useInView({ threshold: thresholdAt * 1 })
 
   useEffect(() => {
@@ -31,12 +30,9 @@ const SkewContent = ({ order, isFirstSkew, title, subtitle, thresholdAt = 1, ste
               <p>{subtitle}</p>
             </div>
             <div className={styles.skewImage}>
-
             </div>
           </div>
-
       }
-
     </>
   )
 }
