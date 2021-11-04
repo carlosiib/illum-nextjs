@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Banner from '../components/Banner'
-import StartAcademyDesktop from '../components/StartAcademyDesktop/index.js'
-
+import StartAcademyDesktop from '../components/StartAcademyDesktop'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
