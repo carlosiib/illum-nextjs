@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { motion, useAnimation } from "framer-motion"
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 import styles from '../../styles/StartAcademy.module.css'
 
 const StartAcademyDesktop = () => {
@@ -7,6 +8,7 @@ const StartAcademyDesktop = () => {
   const [isSelected, setIsSelected] = useState(false)
 
   // Intersection observer Hook for animations
+  const { ref, inView } = useInView()
   const animation = useAnimation()
 
   useEffect(() => {
@@ -14,7 +16,7 @@ const StartAcademyDesktop = () => {
   }, [])
 
   useEffect(() => {
-    if (true) {
+    if (inView) {
       animation.start({
         opacity: 1,
         pathLength: 1,
@@ -24,14 +26,14 @@ const StartAcademyDesktop = () => {
         }
       })
     }
-    // if (true) {
-    //   animation.start({
-    //     opacity: 0,
-    //     pathLength: 0,
-    //   })
-    // }
+    if (!inView) {
+      animation.start({
+        opacity: 0,
+        pathLength: 0,
+      })
+    }
 
-  }, [animation])
+  }, [inView, animation])
 
 
   function handlePathContent(e) {
@@ -56,7 +58,7 @@ const StartAcademyDesktop = () => {
           Start your own Academy
           <img
             src="/svg/btn-checkmark.svg"
-            alt="Checkmark icon"
+            alt="Start your own Academy checkmark"
             width="16"
             height="18"
             className={styles.btnImage}
@@ -135,7 +137,7 @@ const StartAcademyDesktop = () => {
           For Content Managers
           <img
             src="/svg/btn-code.svg"
-            alt="Content managers terminal"
+            alt="Content Managers terminal"
             width="20"
             height="20"
             className={styles.btnImage}
@@ -148,7 +150,7 @@ const StartAcademyDesktop = () => {
           For Learners
           <img
             src="/svg/btn-book.svg"
-            alt="Content managers terminal"
+            alt="Book Learners path"
             width="16"
             height="18"
             className={styles.btnImage}
@@ -162,7 +164,7 @@ const StartAcademyDesktop = () => {
           For Instructors
           <img
             src="/svg/btn-instructor.svg"
-            alt="Content managers terminal"
+            alt="Instructor path"
             width="20"
             height="20"
             className={styles.btnImage}
@@ -171,7 +173,7 @@ const StartAcademyDesktop = () => {
       </div>
 
       {/* PATH CONTENT */}
-      <div className={styles.pathContent}>
+      <div className={styles.pathContent} ref={ref}>
         Lorem trolling
       </div>
 
