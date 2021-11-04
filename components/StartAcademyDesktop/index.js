@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Image from 'next/image'
 import styles from '../../styles/StartAcademy.module.css'
 
 const StartAcademyDesktop = () => {
@@ -19,11 +18,11 @@ const StartAcademyDesktop = () => {
       <div className={styles.buttonRow}>
         <button>
           <span className={styles.btnText}>Start your own Academy</span>
-          <Image
+          <img
             src="/svg/btn-checkmark.svg"
             alt="Checkmark icon"
-            width={16}
-            height={18}
+            width="16"
+            height="18"
             className={styles.btnImage}
           />
         </button>
@@ -87,36 +86,36 @@ const StartAcademyDesktop = () => {
         <button
           onClick={handlePathContent}
           data-content-for="Content Managers">
-          <span className={styles.btnText}>For Content Managers</span>
-          <Image
+          For Content Managers
+          <img
             src="/svg/btn-code.svg"
             alt="Content managers terminal"
-            width={20}
-            height={20}
+            width="20"
+            height="20"
             className={styles.btnImage}
           />
         </button>
         <button
           onClick={handlePathContent}
           data-content-for="Learners">
-          <span className={styles.btnText}>For Learners</span>
-          <Image
+          For Learners
+          <img
             src="/svg/btn-book.svg"
             alt="Content managers terminal"
-            width={16}
-            height={18}
+            width="16"
+            height="18"
             className={styles.btnImage}
           />
         </button>
         <button
           onClick={handlePathContent}
           data-content-for="Instructors">
-          <span className={styles.btnText}>For Instructors</span>
-          <Image
+          For Instructors
+          <img
             src="/svg/btn-instructor.svg"
             alt="Content managers terminal"
-            width={20}
-            height={20}
+            width="20"
+            height="20"
             className={styles.btnImage}
           />
         </button>

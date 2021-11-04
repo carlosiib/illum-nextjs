@@ -29,14 +29,6 @@
   z-index: 10;
 }
 
-.btnImage {
-  pointer-events: none;
-}
-
-.btnText {
-  margin-left: 14px;
-}
-
 .svgsRow {
   position: relative;
   height: 100px;
@@ -86,6 +78,11 @@
   justify-content: center;
   flex-direction: row-reverse;
   cursor: pointer;
+}
+
+.btnImage {
+  margin-right: 14px;
+  pointer-events: none;
 }
 
 /* PATH CONTENT */
