@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Banner from '../components/Banner'
 import StartAcademyDesktop from '../components/StartAcademyDesktop'
+import FreeTrial from '../components/FreeTrial'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -9,10 +10,11 @@ export default function Home() {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Illumidesk LMS" />
+        <meta name="description" content="Illumidesk a Custom Learning Management System" />
+
         <link rel="icon" href="/favicon.ico" />
 
-        <title>Illumidesk</title>
+        <title>Illumidesk LMS</title>
       </Head>
 
       <main>
@@ -25,6 +27,7 @@ export default function Home() {
           height="520"
         />
         <StartAcademyDesktop />
+        <FreeTrial source="main" />
       </main>
 
 

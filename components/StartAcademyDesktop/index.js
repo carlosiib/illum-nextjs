@@ -39,7 +39,6 @@ const StartAcademyDesktop = () => {
 
   function handlePathContent(e) {
     const selectedContent = e.target.dataset.contentFor
-    console.log(selectedContent)
     setCurrentContent(selectedContent)
     setIsSelected(true)
   }

@@ -1,0 +1,33 @@
+.freeTrialContainer {
+  padding: 2rem 1.2rem;
+  text-align: center;
+}
+
+.freeTrialContainer h4 {
+  margin: 0;
+  font-family: "Cooper Lt BT";
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.freeTrialContainer p,
+.freeTrialContainer a {
+  font-family: "Domine";
+}
+.freeTrialContainer p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.freeTrialContainer a {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  padding: 1rem 1.4rem;
+  font-size: 1.2rem;
+  border-radius: var(--b-radius);
+  box-shadow: var(--btn-shadow);
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  display: inline-block;
+}
