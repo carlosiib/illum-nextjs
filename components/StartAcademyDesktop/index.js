@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import PathContentDesktop from '../pathContentDesktop'
+import PathContentDesktop from '../pathContentDesktop/index.js'
 import styles from '../../styles/StartAcademy.module.css'
 
 const StartAcademyDesktop = () => {
