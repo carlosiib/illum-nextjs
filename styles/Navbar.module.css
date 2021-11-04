@@ -1,10 +1,15 @@
 .navbarContainer {
-  padding-top: 0.4rem;
+  padding: 0.4rem 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  max-width: 1400px;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: var(--white-color);
+  z-index: 20;
 }
 
 .navbarList {
@@ -53,4 +58,10 @@
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   vertical-align: middle;
+}
+
+@media (min-width: 1700px) {
+  .navbarContainer {
+    padding: 0.4rem 14rem;
+  }
 }
