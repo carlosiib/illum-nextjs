@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import styles from '../../styles/StartAcademy.module.css'
 
 const StartAcademyDesktop = () => {
@@ -18,7 +18,7 @@ const StartAcademyDesktop = () => {
       <div className={styles.buttonRow}>
         <button>
           Start your own Academy
-          <img src="svg/btn-checkmark.svg" alt="Checkmark icon" width="16" height="18" />
+          <img src="/svg/btn-checkmark.svg" alt="Checkmark icon" width="16" height="18" />
         </button>
       </div>
 
