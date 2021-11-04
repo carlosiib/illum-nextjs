@@ -6,7 +6,7 @@
 .buttonRow {
   display: flex;
   justify-content: flex-end;
-  margin-right: 20%;
+  margin-right: 22%;
 }
 
 .buttonRow button {
@@ -82,9 +82,4 @@
 .btnImage {
   margin-right: 14px;
   pointer-events: none;
-}
-
-/* PATH CONTENT */
-.pathContent {
-  background-color: var(--third-color);
 }

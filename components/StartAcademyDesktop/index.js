@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import PathContentDesktop from '../pathContentDesktop'
 import styles from '../../styles/StartAcademy.module.css'
 
 const StartAcademyDesktop = () => {
@@ -173,8 +174,37 @@ const StartAcademyDesktop = () => {
       </div>
 
       {/* PATH CONTENT */}
-      <div className={styles.pathContent} ref={ref}>
-        Lorem trolling
+      <div ref={ref}>
+        {currentContent === "Instructors" &&
+          <PathContentDesktop
+            currentContent={currentContent}
+            heading="Quickly create engaging learning experience that students will love."
+            firstSubtile="Release assignments to student with a click of a button."
+            firstSubheading="Reference existing content located in external git repos such as Github, BitBucket, and GitLab."
+            secondSubtile="Supercharged grading tools."
+            secondSubheading="Automate repetitive grading tasks. Provide inline feedback and release feedback to students for a richer user experience."
+          />
+        }
+        {currentContent === "Learners" &&
+          <PathContentDesktop
+            currentContent={currentContent}
+            heading="Learn with Notebooks, that offer rich interactive web-based experiences."
+            firstSubtile="Guided learning workflows."
+            firstSubheading="Stay engaged with your material and learn by doing."
+            secondSubtile="Seek additional help with the click of a button."
+            secondSubheading="Engage with other course members, teacher's assistants, or instructors by providing the full context of your current environment."
+          />
+        }
+        {currentContent === "Content Managers" &&
+          <PathContentDesktop
+            currentContent={currentContent}
+            heading="Import course content from existing sources or create fresh content with a simple and intuitive content designer."
+            firstSubtile="Web-based content designer."
+            firstSubheading="Import content from existing sources such as GitHub or create your own fresh content with IllumiDesk's low-code / no-code content designer."
+            secondSubtile="Create Assessments and Assignments."
+            secondSubheading="Mix and match blocks and components that are pre-configured to work with IllumiDesk's auto-grader."
+          />
+        }
       </div>
 
     </div>

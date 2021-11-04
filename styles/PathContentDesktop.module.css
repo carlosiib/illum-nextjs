@@ -1,0 +1,52 @@
+.pathContentDesktop {
+  padding: 2rem 1.2rem;
+  border-radius: 8px 8px 0px 0px;
+  background-color: var(--third-color);
+  display: flex;
+}
+
+.pathContentDesktop h3 {
+  margin: 0;
+  font-family: "Cooper Lt BT";
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.primaryCol {
+  width: 70%;
+  border: 1px solid orange;
+}
+.secondaryCol {
+  width: 30%;
+  border: 1px solid black;
+}
+
+.secondaryCol {
+  display: grid;
+  place-items: center;
+}
+
+.pathDescription {
+  margin-top: 2rem;
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pathDescription div {
+  width: 45%;
+  padding-right: 1rem;
+  font-family: "Domine";
+}
+
+.pathSubtitle {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.pathSubHeading {
+  line-height: 1.6;
+}
