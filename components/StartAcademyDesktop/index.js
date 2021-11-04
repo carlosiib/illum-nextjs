@@ -1,9 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { motion } from "framer-motion"
 import styles from '../../styles/StartAcademy.module.css'
 
 const StartAcademyDesktop = () => {
   const [currentContent, setCurrentContent] = useState("Instructors")
   const [isSelected, setIsSelected] = useState(false)
+
+  useEffect(() => {
+    setIsSelected(true)
+  }, [])
+
 
   function handlePathContent(e) {
     const selectedContent = e.target.dataset.contentFor
@@ -16,8 +22,15 @@ const StartAcademyDesktop = () => {
     <div className={styles.startAcademyContainer}>
 
       <div className={styles.buttonRow}>
-        <button>
-          <span className={styles.btnText}>Start your own Academy</span>
+        <motion.button
+          whileHover={{
+            scale: 1.04,
+            transition: {
+              type: "spring",
+              stiffness: 1000,
+            }
+          }}>
+          Start your own Academy
           <img
             src="/svg/btn-checkmark.svg"
             alt="Checkmark icon"
@@ -25,7 +38,7 @@ const StartAcademyDesktop = () => {
             height="18"
             className={styles.btnImage}
           />
-        </button>
+        </motion.button>
       </div>
 
       <div className={styles.svgsRow}>
@@ -39,7 +52,7 @@ const StartAcademyDesktop = () => {
           >
             <path
               d="M581 0V39.2718C581 42.0332 578.761 44.2718 576 44.2718H548.416H5.99999C3.23857 44.2718 1 46.5104 1 49.2718V97"
-              stroke="#3f85ca"
+              stroke={isSelected && currentContent === "Content Managers" ? "#52b56b" : "#3f85ca"}
               strokeWidth="3"
             />
           </svg>
@@ -57,7 +70,7 @@ const StartAcademyDesktop = () => {
           >
             <path
               d="M225 0V63.1592C225 65.9206 222.761 68.1592 220 68.1592H5.99999C3.23857 68.1592 1 70.3978 1 73.1592V100"
-              stroke="#3f85ca"
+              stroke={isSelected && currentContent === "Learners" ? "#52b56b" : "#3f85ca"}
               strokeWidth="3"
             />
           </svg>
@@ -74,7 +87,7 @@ const StartAcademyDesktop = () => {
           >
             <path
               d="M1 0V62.1608C1 64.9222 3.23858 67.1608 6 67.1608H106C108.761 67.1608 111 69.3994 111 72.1608V99"
-              stroke="#3f85ca"
+              stroke={isSelected && currentContent === "Instructors" ? "#52b56b" : "#3f85ca"}
               strokeWidth="3"
             />
           </svg>
@@ -85,7 +98,8 @@ const StartAcademyDesktop = () => {
       <div className={styles.pathButtons}>
         <button
           onClick={handlePathContent}
-          data-content-for="Content Managers">
+          data-content-for="Content Managers"
+        >
           For Content Managers
           <img
             src="/svg/btn-code.svg"
