@@ -1,3 +1,94 @@
 .startAcademyContainer {
   border: 1px solid cyan;
+  margin: 2rem 0;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: end;
+  margin-right: 20%;
+}
+
+.buttonRow button {
+  font-family: "Domine";
+  cursor: pointer;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-radius: var(--b-radius);
+  box-shadow: var(--btn-shadow);
+  padding: 12px 24px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  display: flex;
+  place-items: center;
+  flex-direction: row-reverse;
+  z-index: 10;
+}
+
+.buttonRow img {
+  margin-right: 14px;
+}
+
+.svgsRow {
+  position: relative;
+  height: 100px;
+}
+
+.svgsRow div {
+  position: relative;
+  height: 100px;
+  z-index: 5;
+}
+
+.svgsRow div:nth-child(1) {
+  top: 0px;
+}
+
+.svgsRow div:nth-child(2) {
+  top: -100px;
+}
+
+.svgsRow div:nth-child(3) {
+  top: -200px;
+}
+
+/* PATH BUTTONS */
+.pathButtons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pathButtons button {
+  font-family: "Domine";
+  color: #fff;
+  padding: 12px 24px 8px 24px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  z-index: 10;
+  width: 30%;
+  border: none;
+  background-color: var(--primary-color);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  cursor: pointer;
+}
+
+.pathButtons button img {
+  margin-right: 14px;
+  pointer-events: none;
+}
+
+/* PATH CONTENT */
+.pathContent {
+  background-color: var(--third-color);
 }
