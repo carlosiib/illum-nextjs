@@ -21,31 +21,33 @@ const Testimonials = () => {
   };
 
   return (
-    <div className={styles.testimonialsContainer}>
-      <div className="testimonial-carousel">
-        <div className="swiper-button-prev">
-          <span className={styles.swiperPrev} ></span>
-        </div>
-        <Swiper className={styles.testimonialsQuote} {...swiperOption}>
-          {TestimonialsData[0].testimonial &&
-            TestimonialsData[0].testimonial.map(
-              (single, key) => {
-                return (
-                  <SwiperSlide key={key}>
-                    <Testimonial
-                      key={key}
-                      data={single}
-                    />
-                  </SwiperSlide>
-                );
-              }
-            )}
-        </Swiper>
-        <div className="swiper-button-next">
-          <span className={styles.swiperNext} ></span>
+    <section>
+      <div className={styles.testimonialsContainer}>
+        <div className="testimonial-carousel">
+          <div className="swiper-button-prev">
+            <span className={styles.swiperPrev} ></span>
+          </div>
+          <Swiper className={styles.testimonialsQuote} {...swiperOption}>
+            {TestimonialsData[0].testimonial &&
+              TestimonialsData[0].testimonial.map(
+                (single, key) => {
+                  return (
+                    <SwiperSlide key={key}>
+                      <Testimonial
+                        key={key}
+                        data={single}
+                      />
+                    </SwiperSlide>
+                  );
+                }
+              )}
+          </Swiper>
+          <div className="swiper-button-next">
+            <span className={styles.swiperNext} ></span>
+          </div>
         </div>
       </div>
-    </div >
+    </section>
   )
 }
 

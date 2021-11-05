@@ -23,34 +23,35 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="newsLetterContainer">
-      <div>
-        <p>Join the community</p>
-        <p>It<span>&apos;</span>s free</p>
-        <input
-          type="text"
-          placeholder="Your Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <button
-          className={state === "LOADING" ? "" : ""}
-          type="button"
-          disabled={state === "LOADING"}
-          onClick={subscribe}
-        >
-          JOIN NOW!
-        </button>
-        {state === "ERROR" && (
-          <p className="failedSubmission">{errorMessage}</p>
-        )}
-        {state === "SUCCESS" && (
-          <p className="successSubmission">Success!</p>
-        )}
+    <section>
+      <div className="newsLetterContainer">
+        <div>
+          <p>Join the community</p>
+          <p>It<span>&apos;</span>s free</p>
+          <input
+            type="text"
+            placeholder="Your Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <button
+            className={state === "LOADING" ? "" : ""}
+            type="button"
+            disabled={state === "LOADING"}
+            onClick={subscribe}
+          >
+            JOIN NOW!
+          </button>
+          {state === "ERROR" && (
+            <p className="failedSubmission">{errorMessage}</p>
+          )}
+          {state === "SUCCESS" && (
+            <p className="successSubmission">Success!</p>
+          )}
+        </div>
+        <img src="/svg/newsletter-person.svg" alt="Join the community with Illumidesk newsletter" />
       </div>
-      <img src="/svg/newsletter-person.svg" alt="Join the community with Illumidesk newsletter" />
-
-    </div>
+    </section>
   );
 }
 

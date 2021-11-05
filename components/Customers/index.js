@@ -39,21 +39,23 @@ const Customers = () => {
   };
 
   return (
-    <div className="customersContainer">
-      <h6 >Some of our customers</h6>
-      <div>
-        <Swiper {...swiperOption}>
-          {CustomersData[0].customers &&
-            CustomersData[0].customers.map((single, key) => {
-              return (
-                <SwiperSlide key={key}>
-                  <Brand key={key} data={single} />
-                </SwiperSlide>
-              );
-            })}
-        </Swiper>
+    <section>
+      <div className="customersContainer">
+        <h6>Some of our customers</h6>
+        <div>
+          <Swiper {...swiperOption}>
+            {CustomersData[0].customers &&
+              CustomersData[0].customers.map((single, key) => {
+                return (
+                  <SwiperSlide key={key}>
+                    <Brand key={key} data={single} />
+                  </SwiperSlide>
+                );
+              })}
+          </Swiper>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -16,28 +16,26 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Illumidesk a Custom Learning Management System" />
 
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.png" />
+        <link rel="apple-touch-icon" href="/icon.png" />
 
         <title>Illumidesk</title>
       </Head>
 
-      <main>
-        <Banner
-          title="Interactive Learning Environments for Data Heroes"
-          subtitle="Interactive teaching and learning concept powered by web-enabled Data Science Notebooks."
-          path="svg/banner-instructor-learner.svg"
-          alt="Instructors and learners"
-          width="540"
-          height="520"
-        />
-        <StartAcademyDesktop />
-        <FreeTrial source="main" />
-        <HowDoesItWorks />
-        <Customers />
-        <Testimonials />
-        <Newsletter />
-      </main>
-
+      <Banner
+        title="Interactive Learning Environments for Data Heroes"
+        subtitle="Interactive teaching and learning concept powered by web-enabled Data Science Notebooks."
+        path="svg/banner-instructor-learner.svg"
+        alt="Instructors and learners"
+        width="540"
+        height="520"
+      />
+      <StartAcademyDesktop />
+      <FreeTrial source="main" />
+      <HowDoesItWorks />
+      <Customers />
+      <Testimonials />
+      <Newsletter />
 
     </div>
   )
