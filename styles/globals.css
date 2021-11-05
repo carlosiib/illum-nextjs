@@ -54,6 +54,150 @@ a {
   background-color: var(--secondary-color);
 }
 
+/* NAVBAR */
+.navbarContainer {
+  padding: 0.4rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: var(--white-color);
+  z-index: 20;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.is-sticky {
+  transition: all 1s;
+  animation: fadeInDown 0.8s ease-in-out;
+  box-shadow: 0 8px 6px -6px rgb(0 0 0 / 10%);
+}
+
+.navbarList {
+  border: 1px solid yellow;
+}
+
+.navbarList ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding: 0;
+}
+
+.navbarList ul li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.navbarList ul li a {
+  font-family: "Domine";
+  font-size: 1rem;
+  letter-spacing: 1.1px;
+  font-weight: bold;
+}
+
+.navbarList ul li a:hover {
+  color: var(--primary-color);
+}
+
+.navbarList-anchor {
+  padding: 8px 24px;
+  line-height: 1.5;
+  margin-right: 0;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-radius: var(--b-radius);
+  box-shadow: var(--btn-shadow);
+  display: inline-block;
+}
+
+.navbarList-anchor a:hover {
+  color: var(--white-color) !important;
+}
+
+/* SUBMENU */
+.sub-menu-container {
+  position: relative;
+}
+
+ul .sub-menu {
+  position: absolute;
+  z-index: 9999;
+  top: 10px;
+  right: 0;
+  /* visibility: visible; */
+  visibility: hidden;
+  width: 230px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding: 18px 0;
+  list-style: none;
+  -webkit-transition: all 0.4s ease 0.2s;
+  -o-transition: all 0.4s ease 0.2s;
+  transition: all 0.4s ease 0.2s;
+  /* opacity: 1; */
+  opacity: 0;
+  border-bottom: 4px solid var(--primary-color);
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 29px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 29px rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (min-width: 1200px) {
+  .sub-menu {
+    left: 0;
+  }
+}
+
+.sub-menu li + li {
+  margin-left: 0px;
+}
+
+.sub-menu .sub-menu-link {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  display: block;
+  margin-left: 14px;
+  background-color: white;
+}
+
+.navbarList li:hover .sub-menu {
+  visibility: visible;
+  margin-top: 15px;
+
+  opacity: 1;
+}
+
+.downArrow {
+  margin-left: 6px;
+  border: solid;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  vertical-align: middle;
+}
+
+@media (min-width: 1700px) {
+  .navbarContainer {
+    padding: 0.4rem 14rem;
+  }
+}
+
 /* SKEW CONTENT */
 .firstSkewContent {
   position: absolute;
