@@ -2,8 +2,9 @@ import Head from 'next/head'
 import Banner from '../components/Banner'
 import StartAcademyDesktop from '../components/StartAcademyDesktop'
 import FreeTrial from '../components/FreeTrial'
-import HowDoesItWorks from '../components/HowDoesItWorks/'
+import HowDoesItWorks from '../components/HowDoesItWorks'
 import Customers from '../components/Customers'
+import Testimonials from '../components/Testimonials'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
         <FreeTrial source="main" />
         <HowDoesItWorks />
         <Customers />
+        <Testimonials />
       </main>
 
 

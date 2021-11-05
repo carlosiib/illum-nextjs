@@ -45,7 +45,6 @@ const Customers = () => {
         <Swiper {...swiperOption}>
           {CustomersData[0].customers &&
             CustomersData[0].customers.map((single, key) => {
-              console.log(single)
               return (
                 <SwiperSlide key={key}>
                   <Brand key={key} data={single} />

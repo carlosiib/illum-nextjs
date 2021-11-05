@@ -119,3 +119,8 @@ a {
   margin-bottom: 4rem;
   text-align: center;
 }
+
+.customersContainer div {
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,63 @@
+.testimonialsContainer {
+  position: relative;
+}
+
+.swiperPrev,
+.swiperNext {
+  border: solid;
+  border-width: 0 8px 8px 0;
+  display: inline-block;
+  padding: 8px;
+  color: var(--secondary-color);
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.swiperPrev {
+  transform: rotate(135deg);
+  left: 26%;
+}
+
+.swiperNext {
+  right: 26%;
+  transform: rotate(315deg);
+}
+
+.testimonialsQuote {
+  width: 40%;
+  border: 1px solid green;
+}
+
+.testimonialsContainer blockquote {
+  font-size: 1.2rem;
+  font-family: "Domine";
+  font-style: italic;
+  line-height: 1.6;
+  quotes: "“" "”" "‘" "’";
+}
+
+.testimonialsContainer blockquote:before {
+  content: open-quote;
+}
+
+.testimonialsContainer blockquote:after {
+  content: close-quote;
+}
+
+.testimonialsQuote p,
+.testimonialsQuote span {
+  margin-left: 2.4rem;
+}
+
+.testimonialsQuote p {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: "Cooper Lt BT";
+  letter-spacing: 1.3px;
+  font-size: 1.1rem;
+}
+
+.testimonialsQuote span {
+  display: inline-block;
+}
