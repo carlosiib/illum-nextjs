@@ -31,7 +31,7 @@ function getRequestParams(email) {
 
 export default async (req, res) => {
   const { email } = JSON.parse(req.body)
-  console.log("back", email)
+
 
   if (!email) {
     return res.status(400).json({

@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
+
 const Newsletter = () => {
   const [email, setEmail] = useState("");
   const [state, setState] = useState("IDLE");
   const [errorMessage, setErrorMessage] = useState(null);
 
   const subscribe = async () => {
-    console.log("front", email)
     setState("LOADING");
     setErrorMessage(null);
     try {
@@ -15,19 +15,21 @@ const Newsletter = () => {
         "body": JSON.stringify({ email: email })
       });
       setState("SUCCESS");
+
     } catch (e) {
       setErrorMessage(e.response.data.error);
-      console.log(e.response.data.error)
       setState("ERROR");
     }
   };
 
   return (
-    <div >
-      <div >
+    <div className="newsLetterContainer">
+      <div>
+        <p>Join the community</p>
+        <p>It<span>&apos;</span>s free</p>
         <input
           type="text"
-          placeholder="Enter Email"
+          placeholder="Your Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
@@ -37,15 +39,17 @@ const Newsletter = () => {
           disabled={state === "LOADING"}
           onClick={subscribe}
         >
-          Subscribe
+          JOIN NOW!
         </button>
+        {state === "ERROR" && (
+          <p className="failedSubmission">{errorMessage}</p>
+        )}
+        {state === "SUCCESS" && (
+          <p className="successSubmission">Success!</p>
+        )}
       </div>
-      {state === "ERROR" && (
-        <p className="">{errorMessage}</p>
-      )}
-      {state === "SUCCESS" && (
-        <p className="">Success!</p>
-      )}
+      <img src="/svg/newsletter-person.svg" alt="Join the community with Illumidesk newsletter" />
+
     </div>
   );
 }

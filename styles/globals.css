@@ -124,3 +124,50 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+/* NEWSLETTER */
+.newsLetterContainer {
+  border: 1px solid red;
+  position: relative;
+  height: 500px;
+}
+
+.newsLetterContainer div {
+  border: 1px solid orange;
+  position: absolute;
+  top: 0%;
+  left: 30%;
+  z-index: 10;
+}
+
+.newsLetterContainer p {
+  font-family: "Cooper Lt BT";
+}
+
+.newsLetterContainer p:nth-child(1) {
+  font-size: 3rem;
+  margin-top: 0rem;
+  margin-bottom: 0.2rem;
+}
+
+.newsLetterContainer p:nth-child(2) {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.failedSubmission {
+  color: #e91139;
+}
+
+.successSubmission {
+  color: var(--primary-color);
+}
+
+.newsLetterContainer img {
+  height: 450px;
+  border: 1px solid cyan;
+  position: relative;
+  top: 10%;
+  left: 18%;
+  z-index: 5;
+}
