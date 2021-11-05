@@ -5,6 +5,7 @@ import FreeTrial from '../components/FreeTrial'
 import HowDoesItWorks from '../components/HowDoesItWorks'
 import Customers from '../components/Customers'
 import Testimonials from '../components/Testimonials'
+import Newsletter from '../components/Newsletter'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
 
-        <title>Illumidesk LMS</title>
+        <title>Illumidesk</title>
       </Head>
 
       <main>
@@ -34,6 +35,7 @@ export default function Home() {
         <HowDoesItWorks />
         <Customers />
         <Testimonials />
+        <Newsletter />
       </main>
 
 

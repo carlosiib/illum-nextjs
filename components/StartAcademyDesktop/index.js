@@ -45,7 +45,6 @@ const StartAcademyDesktop = () => {
 
   return (
     <div className={styles.startAcademyContainer}>
-
       <div className={styles.buttonRow}>
         <motion.button
           whileHover={{
