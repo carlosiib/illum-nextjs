@@ -84,11 +84,12 @@ a {
 .sticky-img {
   position: sticky;
   top: 25%;
+  width: 570px;
   z-index: 10;
 }
 
 .changed-path-img {
-  width: 35%;
+  width: 70%;
   position: absolute;
   left: 150px;
   bottom: 0;
@@ -127,13 +128,11 @@ a {
 
 /* NEWSLETTER */
 .newsLetterContainer {
-  border: 1px solid red;
   position: relative;
   height: 500px;
 }
 
-.newsLetterContainer div {
-  border: 1px solid orange;
+.newsLetterContainer div:first-child {
   position: absolute;
   top: 0%;
   left: 30%;
@@ -155,6 +154,40 @@ a {
   margin: 0;
 }
 
+.newsLetterInput input,
+.newsLetterInput button {
+  height: 35px;
+}
+
+.newsLetterInput input {
+  border: 1px solid var(--primary-color);
+  width: 50%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding-left: 14px;
+}
+
+.newsLetterInput input::placeholder {
+  color: #000;
+  text-transform: uppercase;
+}
+
+.newsLetterInput input:focus {
+  outline: none;
+}
+
+.newsLetterInput button {
+  border: 1px solid var(--primary-color);
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  cursor: pointer;
+  padding: 0rem 14px;
+  letter-spacing: 1.2px;
+  font-family: "Domine";
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
 .failedSubmission {
   color: #e91139;
 }
@@ -164,10 +197,100 @@ a {
 }
 
 .newsLetterContainer img {
-  height: 450px;
-  border: 1px solid cyan;
   position: relative;
-  top: 10%;
-  left: 18%;
+  top: 5%;
+  left: 8%;
   z-index: 5;
+}
+
+/*FOOTER*/
+footer {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 2rem 0rem;
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0;
+  border: 1px solid orange;
+}
+
+.footerFirstCol {
+  border: 1px solid white;
+}
+
+.footerFirstCol img {
+  margin-bottom: 1rem;
+}
+
+.footerSecondCol {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerSecondCol div:nth-child(1),
+.footerSecondCol div:nth-child(2) {
+  padding-right: 4rem;
+  /* border: 1px solid yellow; */
+}
+
+.footerIcons {
+  margin-left: 1rem;
+  padding: 0;
+  display: flex;
+}
+
+.footerIcons li {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.footerIcons li a {
+  display: inline-block;
+}
+
+.footerFirstCol p,
+.footerSecondCol p,
+.footerSecondCol a {
+  font-family: "Domine";
+}
+
+.footerFirstCol p {
+  font-weight: bold;
+  letter-spacing: 1.3px;
+}
+
+.footerFirstCol span {
+  margin-left: 1rem;
+  display: inline-block;
+}
+
+.footerSecondCol p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.footerSecondCol ul {
+  padding: 0;
+}
+.footerSecondCol li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+.footerSecondCol a {
+  display: inline-block;
+  letter-spacing: 1.1px;
+}
+
+.footerSecondCol a:hover {
+  text-decoration: underline;
 }

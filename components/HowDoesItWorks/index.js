@@ -21,7 +21,7 @@ const HowDoesItWorks = () => {
 
     if (change) {
       imageAnimation.start({
-        x: (options.step * 1) % 2 == 0 ? "50%" : "0%",
+        x: (options.step * 1) % 2 == 0 ? "100%" : "0%",
         opacity: 1,
         transition: {
           ease: [0.17, 0.67, 0.83, 0.67],

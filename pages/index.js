@@ -14,7 +14,7 @@ export default function Home() {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Illumidesk a Custom Learning Management System" />
+        <meta name="description" content="Notebooks as a service for LMS systems" />
 
         <link rel="icon" href="/icon.png" />
         <link rel="apple-touch-icon" href="/icon.png" />
