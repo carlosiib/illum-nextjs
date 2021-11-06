@@ -45,7 +45,7 @@ const StartAcademyDesktop = () => {
 
   return (
     <section>
-      <div className={styles.startAcademyContainer}>
+      <div className={styles.startAcademyContainer} id="illumidesk-features">
         <div className={styles.buttonRow}>
           <motion.button
             whileHover={{
@@ -176,7 +176,7 @@ const StartAcademyDesktop = () => {
         </div>
 
         {/* PATH CONTENT */}
-        <div ref={ref}>
+        <div ref={ref} >
           {currentContent === "Instructors" &&
             <PathContentDesktop
               currentContent={currentContent}

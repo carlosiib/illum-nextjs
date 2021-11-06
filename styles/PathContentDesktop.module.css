@@ -14,11 +14,9 @@
 
 .primaryCol {
   width: 70%;
-  border: 1px solid orange;
 }
 .secondaryCol {
   width: 30%;
-  border: 1px solid black;
 }
 
 .secondaryCol {
@@ -28,7 +26,6 @@
 
 .pathDescription {
   margin-top: 2rem;
-  border: 1px solid green;
   display: flex;
   justify-content: space-between;
 }

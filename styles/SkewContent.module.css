@@ -1,7 +1,6 @@
 /* TEXT CONTENT */
 .skewContent {
   width: 50%;
-  border: 1px solid green;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -27,5 +26,4 @@
 /* IMAGE CONTAINER */
 .skewImage {
   width: 50%;
-  border: 1px solid cyan;
 }

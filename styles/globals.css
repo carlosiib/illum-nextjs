@@ -40,7 +40,6 @@ a {
 }
 
 .mainContainer {
-  border: 1px solid red;
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 8rem;
@@ -250,7 +249,6 @@ ul .sub-menu {
   width: 50%;
   top: 10px;
   right: 0;
-  border: 1px solid yellow;
   padding: 0rem 4rem;
 }
 
@@ -406,11 +404,6 @@ footer {
   display: flex;
   justify-content: space-between;
   padding-top: 0;
-  border: 1px solid orange;
-}
-
-.footerFirstCol {
-  border: 1px solid white;
 }
 
 .footerFirstCol img {
@@ -418,7 +411,6 @@ footer {
 }
 
 .footerSecondCol {
-  border: 1px solid green;
   display: flex;
   flex-direction: row;
 }

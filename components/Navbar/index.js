@@ -26,6 +26,19 @@ const Navbar = () => {
     setScroll(window.scrollY);
   };
 
+  function handleFeatureScroll() {
+    const featuresEl = document.getElementById("illumidesk-features")
+    let offset = 100;
+    if (!featuresEl) return
+
+    window.scrollTo({
+      behavior: "smooth",
+      top:
+        featuresEl.getBoundingClientRect().top -
+        document.body.getBoundingClientRect().top - offset
+    });
+  }
+
   return (
     <>
       <div className={`navbarContainer ${scroll > headerTop ? "is-sticky" : ""}`}>
@@ -41,7 +54,7 @@ const Navbar = () => {
           <ul>
             <li>
               <Link href="/">
-                <a>Features</a>
+                <a onClick={handleFeatureScroll} >Features</a>
               </Link>
             </li>
             <li>
