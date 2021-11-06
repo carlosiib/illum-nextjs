@@ -3,11 +3,12 @@ import Banner from '../components/Banner'
 import StartAcademyDesktop from '../components/StartAcademyDesktop'
 import FreeTrial from '../components/FreeTrial'
 import HowDoesItWorks from '../components/HowDoesItWorks'
+import HowDoesItWorkMobile from '../containers/HowDoesItWorkMobile'
 import Customers from '../components/Customers'
 import Testimonials from '../components/Testimonials'
-import Newsletter from '../components/Newsletter'
 import useMediaQuery from '../hooks/useMediaQuery'
 import StartAcademyMobile from '../containers/StartAcademyMobile'
+import Newsletter from '../components/Newsletter'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -22,7 +23,7 @@ export default function Home() {
         <link rel="icon" href="/icon.png" />
         <link rel="apple-touch-icon" href="/icon.png" />
 
-        <title>Illumidesk</title>
+        <title>ILLUMIDESK</title>
       </Head>
 
       <Banner
@@ -35,8 +36,7 @@ export default function Home() {
       />
       {isMobile ? <StartAcademyMobile /> : <StartAcademyDesktop />}
       <FreeTrial source="main" />
-      {isMobile ? <p>Hello</p> : <HowDoesItWorks />}
-
+      {isMobile ? <HowDoesItWorkMobile /> : <HowDoesItWorks />}
       <Customers />
       <Testimonials />
       <Newsletter />

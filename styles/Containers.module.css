@@ -1,10 +1,18 @@
 .mobileContainer {
   margin: 4rem 0rem;
 }
+
 .mobileContainer button,
 .startAcademyItem button,
-.startAcademyContent {
+.startAcademyContent,
+.hdwMobile span {
   font-family: "Domine";
+}
+
+.startAcademyDescription h3,
+.hdwMobile h5,
+.hdwTitle {
+  font-family: "Cooper lT BT";
 }
 
 .mobileContainer button {
@@ -59,9 +67,9 @@
   padding: 2rem;
   border-radius: 0 8px 8px 8px;
 }
+
 .startAcademyDescription h3 {
   margin-top: 0;
-  font-family: "Cooper lT BT";
   font-size: 2rem;
 }
 
@@ -84,6 +92,51 @@
   line-height: 1.5;
 }
 
+/* HOW DOES IT WORKS MOBILE */
+.hdwMobileContainer {
+  margin-bottom: 4rem;
+}
+
+.hdwMobile {
+  padding: 0rem 2rem;
+}
+
+.hdwMobile h5 {
+  margin-top: 1.4rem;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.hdwMobile span {
+  display: block;
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+}
+
+.hdwTitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.hdwSubTitle {
+  font-family: "Domine";
+  font-size: 1.1rem;
+  line-height: 1.4;
+  letter-spacing: 1.1px;
+  font-weight: normal;
+}
+
+.hdwMobileImg {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.hdwMobileImg img {
+  border-radius: var(--b-radius);
+  box-shadow: var(--btn-shadow);
+}
+
 @media (max-width: 426px) {
   .startAcademyDescription h3 {
     font-size: 1.6rem;
@@ -100,6 +153,18 @@
   .startAcademyItem button {
     min-width: 80%;
     font-size: 1rem;
+  }
+
+  .hdwMobile {
+    padding: 0rem;
+  }
+
+  .mobileContainer {
+    margin: 2rem 0rem;
+  }
+
+  .hdwMobile h5 {
+    font-size: 2rem;
   }
 }
 
