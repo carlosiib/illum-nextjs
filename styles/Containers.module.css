@@ -5,13 +5,21 @@
 .mobileContainer button,
 .startAcademyItem button,
 .startAcademyContent,
-.hdwMobile span {
+.hdwMobile span,
+.hdwSubTitle,
+.proCardAnchor,
+.enterpriseCardAnchor,
+.cardBenefit,
+.cardSecondBenefit,
+.cardsList li {
   font-family: "Domine";
 }
 
 .startAcademyDescription h3,
 .hdwMobile h5,
-.hdwTitle {
+.hdwTitle,
+.cardItemTitle,
+.cardPrice {
   font-family: "Cooper lT BT";
 }
 
@@ -119,7 +127,6 @@
 }
 
 .hdwSubTitle {
-  font-family: "Domine";
   font-size: 1.1rem;
   line-height: 1.4;
   letter-spacing: 1.1px;
@@ -135,6 +142,113 @@
 .hdwMobileImg img {
   border-radius: var(--b-radius);
   box-shadow: var(--btn-shadow);
+}
+
+/* PRICING CARDS */
+.pricingCardsContainer {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardItem {
+  min-height: 550px;
+  border: 1px solid yellow;
+  padding: 1rem 1.2rem;
+  margin: 4rem 2rem;
+  background-color: #f6fafe;
+  border: 1px solid #eaf2fa;
+  border-radius: 10px;
+  width: 35%;
+}
+
+.cardItemTitle {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.innerContent {
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #eaf2fa;
+  border-radius: 10px;
+  padding: 1.4rem 1.2rem;
+  min-height: 300px;
+}
+
+.hiddenEl {
+  opacity: 0;
+}
+
+.cardPrice {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.cardBenefit {
+  margin-top: 1.2rem;
+}
+
+.proCardAnchor {
+  display: block;
+  border-radius: var(--b-radius);
+  box-shadow: var(--btn-shadow);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 1rem 0rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.enterpriseCardAnchor {
+  display: block;
+  border-radius: var(--b-radius);
+  box-shadow: var(--btn-shadow);
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 1rem 0rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.cardsList {
+  list-style: none;
+  padding-left: 1rem;
+  margin-top: 1.6rem;
+}
+
+.cardsList li {
+  margin-bottom: 1rem;
+  letter-spacing: 1.1px;
+  display: blocK;
+}
+
+@media (min-width: 1700px) {
+  .cardBenefit,
+  .cardSecondBenefit {
+    margin-bottom: 1.8rem;
+  }
+}
+
+@media (max-width: 1025px) {
+  .cardItem {
+    min-height: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricingCardsContainer {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+  .cardItem {
+    width: 80%;
+    min-height: fit-content;
+  }
 }
 
 @media (max-width: 426px) {
@@ -165,6 +279,15 @@
 
   .hdwMobile h5 {
     font-size: 2rem;
+  }
+
+  .pricingCardsContainer {
+    margin: 1rem 0;
+  }
+
+  .cardItem {
+    width: 90%;
+    min-height: fit-content;
   }
 }
 
