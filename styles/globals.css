@@ -581,4 +581,51 @@ footer {
   .show-drawer {
     display: block;
   }
+
+  .drawersCTA {
+    border: 1px solid red;
+    padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .drawersCTA button {
+    background-color: transparent;
+    padding-top: 1rem;
+    border: none;
+  }
+
+  .drawersCTA button img {
+    cursor: pointer;
+  }
+
+  .mobileItemsList {
+    padding-left: 1.8rem;
+    font-family: "Domine";
+    font-size: 1.2rem;
+    letter-spacing: 1.1px;
+    font-weight: bold;
+  }
+
+  .mobileItemsList li {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+
+  .drawer-submenu-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .drawer-submenu {
+    display: none;
+    margin-top: 1rem;
+    padding-left: 0.6rem;
+  }
+
+  .show-submenu {
+    display: block;
+  }
 }
