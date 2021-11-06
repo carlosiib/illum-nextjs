@@ -47,15 +47,15 @@ const Footer = () => {
               <p>Resources</p>
               <ul>
                 <li>
-                  <Link href="/" >
+                  <Link href="/blog" >
                     <a >
                       Blog
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" >
-                    <a >
+                  <Link href="https://support.illumidesk.com/hc/en-us" >
+                    <a target="_blank" rel="noreferrer" >
                       Docs
                     </a>
                   </Link>
@@ -68,7 +68,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" >
+                  <Link href="/pricing" >
                     <a >
                       Pricing
                     </a>
@@ -80,14 +80,14 @@ const Footer = () => {
               <p>Legal</p>
               <ul>
                 <li>
-                  <Link href="/" >
+                  <Link href="/cookie-policy" >
                     <a >
                       Cookies
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" >
+                  <Link href="/terms-and-conditions" >
                     <a >
                       Terms
                     </a>
