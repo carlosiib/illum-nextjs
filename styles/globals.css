@@ -88,6 +88,7 @@ a {
 
 .navbarList {
   border: 1px solid yellow;
+  padding-top: 2rem;
 }
 
 .navbarList ul {
@@ -115,7 +116,7 @@ a {
 .navbarList-anchor {
   padding: 8px 24px;
   line-height: 1.5;
-  margin-right: 0;
+  margin-right: 0 !important;
   color: var(--white-color);
   background-color: var(--primary-color);
   border-radius: var(--b-radius);
@@ -137,7 +138,6 @@ ul .sub-menu {
   z-index: 9999;
   top: 10px;
   right: 0;
-  /* visibility: visible; */
   visibility: hidden;
   width: 230px;
   margin-top: 30px;
@@ -147,12 +147,13 @@ ul .sub-menu {
   -webkit-transition: all 0.4s ease 0.2s;
   -o-transition: all 0.4s ease 0.2s;
   transition: all 0.4s ease 0.2s;
-  /* opacity: 1; */
   opacity: 0;
   border-bottom: 4px solid var(--primary-color);
   background-color: #fff;
   -webkit-box-shadow: 0 2px 29px rgba(0, 0, 0, 0.05);
   box-shadow: 0 2px 29px rgba(0, 0, 0, 0.05);
+  /* opacity: 1; */
+  /* visibility: visible; */
 }
 
 @media screen and (min-width: 1200px) {
@@ -177,7 +178,6 @@ ul .sub-menu {
 .navbarList li:hover .sub-menu {
   visibility: visible;
   margin-top: 15px;
-
   opacity: 1;
 }
 
@@ -437,4 +437,147 @@ footer {
 
 .footerSecondCol a:hover {
   text-decoration: underline;
+}
+
+.toggle,
+.mobileItemsContainer,
+.mobileNavbar svg {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .navbarContainer {
+    display: none;
+  }
+
+  .mobileNavbar {
+    padding: 0.4rem 2rem 0rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: var(--white-color);
+    z-index: 20;
+  }
+
+  .toggle {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    display: block;
+  }
+
+  .toggle span {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 24px;
+    height: 2px;
+  }
+
+  .toggle span + span {
+    margin-top: 6px;
+  }
+
+  .toggle span::after,
+  .toggle span::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #000;
+  }
+
+  .toggle span.icon-bottom::before,
+  .toggle span.icon-top::before {
+    transition: transform 0.6s
+      cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+    transform: scaleX(1) translateZ(0);
+    transform-origin: right;
+  }
+
+  .toggle span.icon-bottom::after,
+  .toggle span.icon-top::after {
+    transition: transform 0.6s
+      cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: scaleX(0) translateZ(0);
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+  }
+
+  .toggle span.icon-middle::before {
+    transition: transform 0.6s
+      cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+    transform: scaleX(1) translateZ(0);
+    transform-origin: left;
+  }
+
+  .toggle span.icon-middle::after {
+    transition: transform 0.6s
+      cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: scaleX(0) translateZ(0);
+    -webkit-transform-origin: right;
+    -ms-transform-origin: right;
+    transform-origin: right;
+  }
+
+  .toggle:hover span::after,
+  .toggle:hover span::before {
+    background-color: var(--primary-color);
+  }
+
+  .toggle:hover span.icon-bottom::before,
+  .toggle:hover span.icon-top::before {
+    transition: transform 0.6s
+      cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: scaleX(0) translateZ(0);
+  }
+
+  .toggle:hover span.icon-bottom::after,
+  .toggle:hover span.icon-top::after {
+    transition: transform 0.6s
+      cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+    transform: scaleX(1) translateZ(0);
+  }
+
+  .toggle:hover span.icon-middle::before {
+    transition: transform 0.6s
+      cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: scaleX(0) translateZ(0);
+  }
+
+  .toggle:hover span.icon-middle::after {
+    transition: transform 0.6s
+      cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+    transform: scaleX(1) translateZ(0);
+  }
+
+  .mobileNavbar svg {
+    display: block;
+  }
+
+  .mobileItemsContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60vw;
+    height: 100vh;
+    border: 1px solid red;
+    background-color: var(--white-color);
+  }
+
+  .show-drawer {
+    display: block;
+  }
 }
