@@ -1,3 +1,112 @@
-.testt {
-  color: var(--primary-color);
+.blogContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.blogfirstCol {
+  width: 65%;
+}
+
+.blogItem {
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  padding-bottom: 2rem;
+  box-shadow: var(--btn-shadow);
+}
+
+.blogEntryImg {
+  width: 100% !important;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.blogItem h3,
+.blogItem p,
+.blogItem a {
+  margin-left: 1rem;
+}
+
+.blogContainer h1,
+.blogItem h3 {
+  font-family: "Cooper Lt BT";
+  font-size: 1.6rem;
+  letter-spacing: 1.1px;
+}
+
+.blogItem p,
+.previewContent {
+  font-family: "Domine";
+  line-height: 1.4;
+}
+
+.blogArrow {
+  font-size: 20px;
+  margin-left: 12px;
+}
+
+/* BLOG ASIDE */
+.blogSecondCol {
+  width: 30%;
+}
+
+.blogSecondCol h3 {
+  font-family: "Cooper Lt BT";
+  font-size: 1.4rem;
+  letter-spacing: 1.1px;
+}
+
+.blogSecondCol input {
+  border-radius: 50px;
+  height: 40px;
+  width: 80%;
+  border: 1px solid var(--primary-color);
+}
+
+.blogSecondCol input::placeholder {
+  padding-left: 14px;
+  color: var(--black-color);
+}
+
+/* SINGLE BLOG POST*/
+.blogContainer img {
+  width: 90%;
+}
+
+.blogContainer h1 {
+  font-size: 2rem;
+}
+
+.previewContent,
+.blogContent,
+.blogContainer h1 {
+  width: 90%;
+}
+
+.previewContent {
+  padding: 1rem 0 1rem 0.8rem;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  background-color: var(--third-color);
+  border-left: 3px solid var(--primary-color);
+}
+
+.blogContent {
+  margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .blogContainer {
+    flex-direction: column;
+  }
+  .blogfirstCol,
+  .blogSecondCol {
+    width: 100%;
+    padding: 0rem 1rem;
+  }
+  .previewContent,
+  .blogContent,
+  .blogContainer img {
+    width: 100%;
+  }
 }

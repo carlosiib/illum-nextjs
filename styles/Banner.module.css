@@ -1,5 +1,4 @@
 .bannerContainer {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
@@ -8,7 +7,13 @@
 /* TEXT COL */
 .firstCol {
   padding-left: 1rem;
-  border: 1px solid green;
+  display: grid;
+  place-items: center;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  width: 100%;
 }
 
 .firstCol h1 {
@@ -29,17 +34,11 @@
 
 /* IMAGE COL */
 .secondCol {
-  border: 1px solid blue;
   display: grid;
   place-items: center;
 }
 
 @media (max-width: 1100px) {
-  .firstCol {
-    display: grid;
-    place-items: center;
-  }
-
   .firstCol h1 {
     font-size: 3.8rem;
   }

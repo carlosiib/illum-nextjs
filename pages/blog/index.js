@@ -1,11 +1,56 @@
 import React from 'react'
+import Link from 'next/link'
+import Banner from '../../components/Banner'
+import styles from '../../styles/Blog.module.css'
 
+const Blog = ({ blog }) => {
+  const { blogs } = blog
 
-const Blog = ({ users }) => {
   return (
     <div>
-      <p >Blog</p>
-      {users && users.map(u => (<p key={u.id}>{u.name}</p>))}
+      <Banner
+        title="Blog"
+        subtitle=""
+        path="svg/banner-instructor-learner.svg"
+        alt="Instructors and learners"
+        width="540"
+        height="520"
+      />
+      <div className={styles.blogContainer}>
+        <div className={styles.blogfirstCol}>
+          {blogs && blogs.map(blog =>
+          (
+            <div key={blog.title} className={styles.blogItem}>
+              <img className={styles.blogEntryImg} src={blog.image.url} alt={blog.title} />
+              <h3>{blog.title}</h3>
+              <p>{blog.previewContent}</p>
+              <Link href={`/blog/${blog.slug}`}>
+                <a className="path-content-anchor">
+                  Read More
+                  <i className={styles.blogArrow}>&#8594;</i>
+                </a>
+              </Link>
+            </div>
+          ))
+          }
+
+        </div>
+        <div className={styles.blogSecondCol}>
+          <div>
+            <h3>Search</h3>
+            <input type="text" placeholder="Type your keywords" />
+          </div>
+          <div >
+            <h3>Popular Post</h3>
+          </div>
+          <div>
+            <h3>Categories</h3>
+          </div>
+          <div>
+            <h3>Tags</h3>
+          </div>
+        </div>
+      </div>
     </div >
 
   )
@@ -13,14 +58,33 @@ const Blog = ({ users }) => {
 
 export default Blog
 
-// Executed in server
+
 export async function getStaticProps() {
   try {
-    const res = await fetch("https://jsonplaceholder.typicode.com/users")
-    const req = await res.json()
+    const req = await fetch("https://api-us-east-1.graphcms.com/v2/ckvbhd3dw0cs901y04kmdehj1/master", {
+      method: "POST",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify({
+        query: `
+        query{
+          blogs{
+            title
+            slug
+            previewContent
+            image {
+              url
+            }
+          }  
+        }        
+        `
+      })
+    })
+    const res = await req.json()
+    const { data } = res
+
     return {
       props: {
-        users: req
+        blog: data
       }
     }
   } catch (error) {
