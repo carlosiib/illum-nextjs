@@ -469,6 +469,7 @@ footer {
     cursor: pointer;
     border: none;
     display: block;
+    margin-top: 2rem;
   }
 
   .toggle span {
