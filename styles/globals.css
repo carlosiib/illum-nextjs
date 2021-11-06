@@ -155,12 +155,6 @@ ul .sub-menu {
   /* visibility: visible; */
 }
 
-@media screen and (min-width: 1200px) {
-  .sub-menu {
-    left: 0;
-  }
-}
-
 .sub-menu li + li {
   margin-left: 0px;
 }
@@ -191,10 +185,30 @@ ul .sub-menu {
   vertical-align: middle;
 }
 
-@media (min-width: 1700px) {
-  .navbarContainer {
-    padding: 0.4rem 14rem;
-  }
+/* START ACADEMY*/
+.path-content-anchor {
+  display: inline-block;
+  color: var(--secondary-color);
+}
+
+.path-content-anchor:hover {
+  color: var(--primary-color);
+}
+
+.path-content-anchor:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px var(--primary-color);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.path-content-anchor:hover:after {
+  transform: scaleX(1);
+}
+
+.path-content-anchor:after {
+  transform-origin: 0% 50%;
 }
 
 /* SKEW CONTENT */
@@ -379,7 +393,6 @@ footer {
 .footerSecondCol div:nth-child(1),
 .footerSecondCol div:nth-child(2) {
   padding-right: 4rem;
-  /* border: 1px solid yellow; */
 }
 
 .footerIcons {
@@ -442,6 +455,16 @@ footer {
 .mobileItemsContainer,
 .mobileNavbar svg {
   display: none;
+}
+
+@media (min-width: 1700px) {
+  .navbarContainer {
+    padding: 0.4rem 14rem;
+  }
+
+  .sub-menu {
+    left: 0;
+  }
 }
 
 @media (max-width: 1400px) {

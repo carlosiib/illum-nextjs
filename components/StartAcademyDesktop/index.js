@@ -141,6 +141,7 @@ const StartAcademyDesktop = () => {
               width="20"
               height="20"
               className={styles.btnImage}
+              loading="lazy"
             />
           </button>
           <button
@@ -154,6 +155,7 @@ const StartAcademyDesktop = () => {
               width="16"
               height="18"
               className={styles.btnImage}
+              loading="lazy"
             />
           </button>
           <button
@@ -168,6 +170,7 @@ const StartAcademyDesktop = () => {
               width="20"
               height="20"
               className={styles.btnImage}
+              loading="lazy"
             />
           </button>
         </div>
