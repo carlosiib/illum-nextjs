@@ -10,7 +10,7 @@ const Banner = ({ title, subtitle, path, alt, width, height }) => {
           <h2>{subtitle}</h2>
         </div>
         <div className={styles.secondCol}>
-          <img src={path} alt={alt} width={width} height={height} />
+          <img src={path} alt={alt} width={width} height={height} loading="lazy" />
         </div>
       </div>
     </section>

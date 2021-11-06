@@ -96,7 +96,8 @@ const Navbar = () => {
       </div >
 
       {/* MOBILE NAVBAR */}
-      <div className="mobileNavbar">
+      {/* {`mobileNavbar ${scroll > headerTop ? "is-sticky" : ""}`} */}
+      <div className={`mobileNavbar is-sticky`}>
         <div>
           <Link href="/">
             <a>

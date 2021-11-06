@@ -446,12 +446,15 @@ footer {
 }
 
 @media (max-width: 991px) {
+  .mainContainer {
+    padding-top: 6rem;
+  }
   .navbarContainer {
     display: none;
   }
 
   .mobileNavbar {
-    padding: 0.4rem 2rem 0rem 0rem;
+    padding-right: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -573,9 +576,9 @@ footer {
     top: 0;
     right: 0;
     width: 60vw;
-    height: 100vh;
-    border: 1px solid red;
+    height: 100%;
     background-color: var(--white-color);
+    box-shadow: 0 5px 28px -4px rgba(0, 0, 0, 0.4);
   }
 
   .show-drawer {
@@ -583,11 +586,11 @@ footer {
   }
 
   .drawersCTA {
-    border: 1px solid red;
     padding: 1rem 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #ccc;
   }
 
   .drawersCTA button {

@@ -23,7 +23,7 @@ const MobileNavbar = ({ show, onClose }) => {
           className="btn-close"
           onClick={onClose}
         >
-          <img src="/svg/drawer-close.svg" width="20" height="20" alt="Drawer close menu" />
+          <img src="/svg/drawer-close.svg" width="20" height="20" alt="Drawer close menu" loading="lazy" />
         </button>
       </div>
 
@@ -31,17 +31,17 @@ const MobileNavbar = ({ show, onClose }) => {
         <ul className="mobileItemsList">
           <li>
             <Link href="/">
-              <a>Features</a>
+              <a onClick={onClose}>Features</a>
             </Link>
           </li>
           <li>
             <Link href="/blog">
-              <a>Blog</a>
+              <a onClick={onClose}>Blog</a>
             </Link>
           </li>
           <li>
             <Link href="/pricing">
-              <a>Pricing</a>
+              <a onClick={onClose}>Pricing</a>
             </Link>
           </li>
           <li >
@@ -55,10 +55,11 @@ const MobileNavbar = ({ show, onClose }) => {
             </Link>
             <ul className="drawer-submenu">
               <li >
-                <Link href="https://support.illumidesk.com/hc/en-us">
+                <Link href="https://support.illumidesk.com/hc/en-us" >
                   <a
                     target="_blank"
                     rel="noreferrer"
+                    onClick={onClose}
                   >
                     Illumidesk Support
                   </a>
@@ -68,12 +69,14 @@ const MobileNavbar = ({ show, onClose }) => {
           </li>
           <li>
             <Link href="/about">
-              <a>About us</a>
+              <a onClick={onClose}>About us</a>
             </Link>
           </li>
           <li>
-            <Link href="https://app.illumidesk.com/login?utm_source=main&utm_medium=free-trial-navbar-button&utm_campaign=web">
-              <a>FREE TRIAL</a>
+            <Link
+              href="https://app.illumidesk.com/login?utm_source=main&utm_medium=free-trial-navbar-button&utm_campaign=web"
+            >
+              <a className="navbarList-anchor" target="_blank" rel="noreferrer">FREE TRIAL</a>
             </Link>
           </li>
         </ul>

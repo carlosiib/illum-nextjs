@@ -6,9 +6,11 @@ import HowDoesItWorks from '../components/HowDoesItWorks'
 import Customers from '../components/Customers'
 import Testimonials from '../components/Testimonials'
 import Newsletter from '../components/Newsletter'
+import useMediaQuery from '../hooks/useMediaQuery'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  const isMobile = useMediaQuery("(max-width: 991px)")
   return (
     <div className={styles.container}>
       <Head>
@@ -30,7 +32,7 @@ export default function Home() {
         width="540"
         height="520"
       />
-      <StartAcademyDesktop />
+      {isMobile ? <p>Hello</p> : <StartAcademyDesktop />}
       <FreeTrial source="main" />
       <HowDoesItWorks />
       <Customers />
