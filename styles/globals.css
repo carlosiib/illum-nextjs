@@ -60,7 +60,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
   position: fixed;
   width: 100vw;
   top: 0;
@@ -445,6 +444,22 @@ footer {
   display: none;
 }
 
+@media (max-width: 1400px) {
+  .navbarContainer {
+    padding: 0.4rem 1.6rem;
+  }
+}
+
+@media (max-width: 1025px) {
+  .sticky-img {
+    width: 470px;
+    overflow: hidden;
+  }
+  .changed-path-img {
+    bottom: 20px;
+  }
+}
+
 @media (max-width: 991px) {
   .mainContainer {
     padding-top: 6rem;
@@ -575,7 +590,7 @@ footer {
     position: fixed;
     top: 0;
     right: 0;
-    width: 60vw;
+    width: 40vw;
     height: 100%;
     background-color: var(--white-color);
     box-shadow: 0 5px 28px -4px rgba(0, 0, 0, 0.4);
@@ -630,5 +645,112 @@ footer {
 
   .show-submenu {
     display: block;
+  }
+
+  /*CUSTOMERS*/
+  .customersContainer h6 {
+    font-size: 3rem;
+  }
+
+  /*NEWSLETTER*/
+  .newsLetterContainer p:nth-child(1) {
+    font-size: 2rem;
+  }
+
+  .newsLetterContainer p:nth-child(2) {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .newsLetterInput {
+    width: 400px;
+  }
+
+  .newsLetterInput input {
+    width: 70%;
+  }
+}
+
+@media (max-width: 670px) {
+  .newsLetterContainer div:first-child {
+    left: 20%;
+  }
+
+  .footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 470px) {
+  .mobileItemsContainer {
+    width: 80vw;
+  }
+
+  .customersContainer h6 {
+    font-size: 2rem;
+  }
+
+  .newsLetterContainer div:first-child {
+    left: 2%;
+  }
+
+  .newsLetterContainer p:nth-child(2) {
+    margin-bottom: 1rem;
+  }
+
+  .newsLetterInput {
+    width: fit-content;
+  }
+
+  .newsLetterInput input,
+  .newsLetterInput button {
+    width: 100%;
+  }
+
+  .newsLetterInput input {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 8px;
+  }
+
+  .newsLetterInput button {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .newsLetterContainer img {
+    top: 8%;
+    left: 0px;
+    width: 100%;
+  }
+
+  .footerContent {
+    flex-direction: column;
+  }
+
+  .footerFirstCol,
+  .footerSecondCol {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .footerSecondCol {
+    flex-direction: column;
+  }
+
+  .footerSecondCol div:nth-child(1),
+  .footerSecondCol div:nth-child(2) {
+    padding-right: 0rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .newsLetterInput input,
+  .newsLetterInput button {
+    width: 100%;
   }
 }

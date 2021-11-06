@@ -62,3 +62,28 @@
 .testimonialsQuote span {
   display: inline-block;
 }
+
+@media (max-width: 670px) {
+  .testimonialsQuote {
+    width: 60%;
+  }
+  .swiperPrev {
+    left: 16%;
+  }
+
+  .swiperNext {
+    right: 16%;
+  }
+}
+
+@media (max-width: 670px) {
+  .testimonialsQuote {
+    width: 80%;
+  }
+  .swiperPrev {
+    left: 4%;
+  }
+  .swiperNext {
+    right: 4%;
+  }
+}

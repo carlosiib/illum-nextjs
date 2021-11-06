@@ -34,12 +34,63 @@
   place-items: center;
 }
 
+@media (max-width: 1100px) {
+  .firstCol {
+    display: grid;
+    place-items: center;
+  }
+
+  .firstCol h1 {
+    font-size: 3.8rem;
+  }
+
+  .firstCol h2 {
+    margin: 0;
+  }
+
+  .firstCol,
+  .secondCol {
+    width: 50%;
+  }
+
+  .secondCol img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 992px) {
   .bannerContainer {
     flex-direction: column-reverse;
   }
+
+  .firstCol,
+  .secondCol {
+    width: 100%;
+    text-align: center;
+  }
+
+  .firstCol h1 {
+    font-size: 2.8rem;
+  }
+
   .secondCol img {
     width: 330px;
     height: 330px;
+  }
+}
+
+@media (max-width: 470px) {
+  .firstCol {
+    padding-left: 0;
+  }
+  .secondCol img {
+    width: 100%;
+  }
+  .firstCol h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .firstCol h2 {
+    font-size: 1.1rem;
   }
 }

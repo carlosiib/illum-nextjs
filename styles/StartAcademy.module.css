@@ -83,3 +83,13 @@
   margin-right: 14px;
   pointer-events: none;
 }
+
+@media (max-width: 1100px) {
+  .buttonRow {
+    margin-right: 10%;
+  }
+
+  .svgsRow {
+    overflow: hidden;
+  }
+}

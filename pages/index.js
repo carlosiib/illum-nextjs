@@ -34,7 +34,8 @@ export default function Home() {
       />
       {isMobile ? <p>Hello</p> : <StartAcademyDesktop />}
       <FreeTrial source="main" />
-      <HowDoesItWorks />
+      {isMobile ? <p>Hello</p> : <HowDoesItWorks />}
+
       <Customers />
       <Testimonials />
       <Newsletter />
