@@ -1,0 +1,113 @@
+.mobileContainer {
+  margin: 4rem 0rem;
+}
+.mobileContainer button,
+.startAcademyItem button,
+.startAcademyContent {
+  font-family: "Domine";
+}
+
+.mobileContainer button {
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  line-height: 1.5;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-radius: var(--b-radius);
+  box-shadow: var(--btn-shadow);
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+  box-shadow: var(--btn-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.mobileContainer button img {
+  margin-right: 1rem;
+}
+
+.startAcademyItem {
+  margin-bottom: 2rem;
+}
+
+.startAcademyItem button {
+  background-color: var(--secondary-color);
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  color: var(--white-color);
+  padding: 6px 8px;
+  min-width: 45%;
+  font-size: 1.2rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.startAcademyItem button img {
+  margin-right: 0.8rem;
+}
+
+.startAcademyDescription {
+  background-color: var(--third-color);
+  padding: 2rem;
+  border-radius: 0 8px 8px 8px;
+}
+.startAcademyDescription h3 {
+  margin-top: 0;
+  font-family: "Cooper lT BT";
+  font-size: 2rem;
+}
+
+.startAcademyContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.startAcademyContent div {
+  padding-right: 2rem;
+}
+
+.startAcademyContentTitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.startAcademyContentDescription {
+  line-height: 1.5;
+}
+
+@media (max-width: 426px) {
+  .startAcademyDescription h3 {
+    font-size: 1.6rem;
+  }
+
+  .startAcademyContent {
+    flex-direction: column-reverse;
+  }
+
+  .mobileContainer button {
+    font-size: 1rem;
+  }
+
+  .startAcademyItem button {
+    min-width: 80%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .startAcademyDescription h3 {
+    font-size: 1.4rem;
+  }
+  .startAcademyItem button {
+    min-width: 90%;
+  }
+}

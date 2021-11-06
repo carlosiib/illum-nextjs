@@ -31,3 +31,9 @@
   text-transform: uppercase;
   display: inline-block;
 }
+
+@media (max-width: 476px) {
+  .freeTrialContainer a {
+    font-size: 1rem;
+  }
+}
