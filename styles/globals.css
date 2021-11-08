@@ -535,7 +535,7 @@ footer {
     cursor: pointer;
     border: none;
     display: block;
-    margin-top: 2rem;
+    margin-top: 0.4rem;
   }
 
   .toggle span {
