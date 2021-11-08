@@ -57,8 +57,8 @@
   justify-content: flex-start;
   text-transform: uppercase;
   color: var(--white-color);
-  padding: 6px 8px;
-  min-width: 45%;
+  padding: 12px 2rem;
+  min-width: 100%;
   font-size: 1.2rem;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -73,7 +73,7 @@
 .startAcademyDescription {
   background-color: var(--third-color);
   padding: 2rem;
-  border-radius: 0 8px 8px 8px;
+  border-radius: 0 0 8px 8px;
 }
 
 .startAcademyDescription h3 {
@@ -259,11 +259,11 @@
   }
 
   .mobileContainer button {
+    width: 100%;
     font-size: 1rem;
   }
 
   .startAcademyItem button {
-    min-width: 80%;
     font-size: 1rem;
   }
 
@@ -292,8 +292,5 @@
 @media (max-width: 376px) {
   .startAcademyDescription h3 {
     font-size: 1.4rem;
-  }
-  .startAcademyItem button {
-    min-width: 90%;
   }
 }

@@ -781,12 +781,12 @@ footer {
 
   .footerFirstCol,
   .footerSecondCol {
-    margin: 0 auto;
     margin-bottom: 1rem;
   }
 
   .footerSecondCol {
     flex-direction: column;
+    margin-left: 1.4rem;
   }
 
   .footerSecondCol div:nth-child(1),
