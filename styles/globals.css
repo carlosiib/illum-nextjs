@@ -465,7 +465,7 @@ footer {
 }
 .footerSecondCol li {
   list-style: none;
-  margin-bottom: 8px;
+  margin-bottom: 1rem;
 }
 .footerSecondCol a {
   display: inline-block;

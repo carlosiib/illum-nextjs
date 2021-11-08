@@ -109,12 +109,11 @@ const Navbar = () => {
       </div >
 
       {/* MOBILE NAVBAR */}
-      {/* {`mobileNavbar ${scroll > headerTop ? "is-sticky" : ""}`} */}
       <div className={`mobileNavbar is-sticky`}>
         <div>
           <Link href="/">
-            <a alt="Illumidesk logo">
-              <NavbarLogo width="198" height="80" />
+            <a >
+              <NavbarLogo width="198" height="80" alt="Illumidesk logo" />
             </a>
           </Link>
         </div>
