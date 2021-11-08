@@ -24,7 +24,12 @@ export default function Home() {
         <link rel="icon" href="/icon.png" />
         <link rel="apple-touch-icon" href="/icon.png" />
 
+
+        <script dataiubpurposes="2" src="/scripts/driftor.js" className="_iub_cs_activate" type="text/javascript" defer />
+        <script src="/scripts/driftor-config.js" type="text/javascript" defer />
+
         <title>ILLUMIDESK</title>
+
       </Head>
 
       <Banner
