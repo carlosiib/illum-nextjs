@@ -112,7 +112,7 @@ const Navbar = () => {
       <div className={`mobileNavbar is-sticky`}>
         <div>
           <Link href="/">
-            <a >
+            <a alt="Illumidesk logo">
               <NavbarLogo width="198" height="80" alt="Illumidesk logo" />
             </a>
           </Link>
