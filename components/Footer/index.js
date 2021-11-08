@@ -48,28 +48,28 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link href="/blog" >
-                    <a >
+                    <a title="Blog">
                       Blog
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href="https://support.illumidesk.com/hc/en-us" >
-                    <a target="_blank" rel="noreferrer" >
+                    <a target="_blank" rel="noreferrer" title="Documentation">
                       Docs
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/" >
-                    <a >
+                    <a title="Community">
                       Community
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/pricing" >
-                    <a >
+                    <a title="Pricing">
                       Pricing
                     </a>
                   </Link>
@@ -81,28 +81,28 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link href="/cookie-policy" >
-                    <a >
+                    <a title="Cookie Policy">
                       Cookies
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/terms-and-conditions" >
-                    <a >
+                    <a title="Terms and conditions">
                       Terms
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/" >
-                    <a >
+                    <a title="Privacy Policy">
                       Privacy
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/" >
-                    <a >
+                    <a title="Security">
                       Security
                     </a>
                   </Link>
@@ -110,37 +110,6 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <p>Company</p>
-              <ul>
-                <li>
-                  <Link href="/" >
-                    <a >
-                      About us
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/" >
-                    <a >
-                      Contact
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/" >
-                    <a >
-                      Careers
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/" >
-                    <a >
-                      Investors
-                    </a>
-                  </Link>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
