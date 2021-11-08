@@ -14,7 +14,7 @@ const MobileNavbar = ({ show, onClose }) => {
       <div className="drawersCTA">
         <img
           src="/svg/illumidesk-brand-logo-primary.svg"
-          alt="Illumidesk company logo"
+          alt="Illumidesk logo"
           width="140"
           height="40"
         />

@@ -10,7 +10,7 @@ const Footer = () => {
             <div>
               <img
                 src="/svg/illumidesk-brand-logo-secondary.svg"
-                alt="Illumidesk company logo"
+                alt="Illumidesk logo"
                 width="160"
                 height="40"
               />

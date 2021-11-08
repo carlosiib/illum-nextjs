@@ -44,7 +44,7 @@ const Navbar = () => {
       <div className={`navbarContainer ${scroll > headerTop ? "is-sticky" : ""}`}>
         <div>
           <Link href="/">
-            <a>
+            <a alt="Illumidesk logo">
               <NavbarLogo width="198" height="80" />
             </a>
           </Link>
