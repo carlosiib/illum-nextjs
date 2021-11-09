@@ -1,41 +1,58 @@
 import React from 'react'
+import Head from 'next/head'
 import styles from '../../styles/Blog.module.css'
 
 const BlogPost = ({ blog }) => {
 
   console.log(blog.blogs[0])
   return (
-    <div className={styles.blogContainer}>
-      <div className={styles.blogfirstCol}>
-        <img src={blog.blogs[0].image.url} alt={blog.blogs[0].title} loading="lazy" />
-        <h1>{blog.blogs[0].title}</h1>
-        <div className={styles.previewContent}>
-          {blog.blogs[0].previewContent}
-        </div>
-        <div
-          dangerouslySetInnerHTML={{ __html: blog.blogs[0].content.html }}
-          className={styles.blogContent}
-        >
-        </div>
-        <hr className="box-line-dashed"></hr>
-      </div>
-      <div className={styles.blogSecondCol}>
-        <div>
-          <h3>Search</h3>
-          <input type="text" placeholder="Type your keywords" />
-        </div>
-        <div >
-          <h3>Popular Post</h3>
-        </div>
-        <div>
-          <h3>Categories</h3>
-        </div>
-        <div>
-          <h3>Tags</h3>
-        </div>
-      </div>
+    <>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="Content-Language" content="en" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    </div >
+
+        <link rel="icon" href="/icon.png" />
+        <link rel="apple-touch-icon" href="/icon.png" />
+
+        <meta name="description" content={blog.blogs[0].previewContent} />
+        <title>{blog.blogs[0].title}</title>
+
+      </Head>
+
+      <div className={styles.blogContainer}>
+        <div className={styles.blogfirstCol}>
+          <img src={blog.blogs[0].image.url} alt={blog.blogs[0].title} loading="lazy" />
+          <h1>{blog.blogs[0].title}</h1>
+          <div className={styles.previewContent}>
+            {blog.blogs[0].previewContent}
+          </div>
+          <div
+            dangerouslySetInnerHTML={{ __html: blog.blogs[0].content.html }}
+            className={styles.blogContent}
+          >
+          </div>
+          <hr className="box-line-dashed"></hr>
+        </div>
+        <div className={styles.blogSecondCol}>
+          <div>
+            <h3>Search</h3>
+            <input type="text" placeholder="Type your keywords" />
+          </div>
+          <div >
+            <h3>Popular Post</h3>
+          </div>
+          <div>
+            <h3>Categories</h3>
+          </div>
+          <div>
+            <h3>Tags</h3>
+          </div>
+        </div>
+
+      </div >
+    </>
   )
 }
 
