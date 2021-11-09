@@ -482,6 +482,50 @@ footer {
   display: none;
 }
 
+/* 404 PAGE */
+.notFoundPageContainer {
+  padding: 0 2rem;
+  display: grid;
+  place-items: center;
+  height: 60vh;
+  text-align: center;
+}
+
+.notFoundPageContainer h1,
+.notFoundPageContainer h2 {
+  font-family: "Copper Lt Bt";
+  font-size: 4rem;
+}
+
+.notFoundPageContainer h1 {
+  margin-bottom: 0;
+  color: var(--secondary-color);
+}
+
+.notFoundPageContainer h2 {
+  margin: 0.4rem 0;
+}
+
+.notFoundPageContainer p,
+.notFoundPageContainer a {
+  font-family: "Domine";
+}
+
+.notFoundPageContainer p {
+  font-size: 1.4rem;
+}
+
+.notFoundPageContainer a {
+  display: inline-block;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  padding: 14px 24px;
+  border-radius: var(--b-radius);
+  box-shadow: var(--btn-shadow);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
 @media (min-width: 1700px) {
   .navbarContainer {
     padding: 0.4rem 14rem;
