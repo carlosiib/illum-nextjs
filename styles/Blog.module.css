@@ -6,6 +6,7 @@
 
 .blogfirstCol {
   width: 65%;
+  padding-left: 1rem;
 }
 
 .blogItem {
@@ -35,9 +36,14 @@
 }
 
 .blogItem p,
-.previewContent {
+.previewContent,
+.blogContent {
   font-family: "Domine";
-  line-height: 1.4;
+  line-height: 1.6;
+}
+
+.blogItem p {
+  margin: 2rem 1rem;
 }
 
 .blogArrow {
@@ -70,17 +76,11 @@
 
 /* SINGLE BLOG POST*/
 .blogContainer img {
-  width: 90%;
+  width: 100%;
 }
 
 .blogContainer h1 {
   font-size: 2rem;
-}
-
-.previewContent,
-.blogContent,
-.blogContainer h1 {
-  width: 90%;
 }
 
 .previewContent {
@@ -92,6 +92,7 @@
 }
 
 .blogContent {
+  font-size: 1.2rem;
   margin: 2rem 0;
 }
 
@@ -101,12 +102,6 @@
   }
   .blogfirstCol,
   .blogSecondCol {
-    width: 100%;
     padding: 0rem 1rem;
-  }
-  .previewContent,
-  .blogContent,
-  .blogContainer img {
-    width: 100%;
   }
 }

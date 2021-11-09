@@ -113,7 +113,8 @@ const Navbar = () => {
         <div>
           <Link href="/">
             <a alt="Illumidesk logo" datamobile="true">
-              <NavbarLogo width="198" height="80" alt="Illumidesk logo" />
+              <img src="/svg/illumidesk-brand-logo-primary.svg" width="198" height="80" alt="Illumidesk log" />
+              {/* <NavbarLogo width="198" height="80" alt="Illumidesk logo" /> */}
             </a>
           </Link>
         </div>
