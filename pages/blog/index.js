@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import Link from 'next/link'
 import Banner from '../../components/Banner'
 import styles from '../../styles/Blog.module.css'
@@ -8,6 +9,16 @@ const Blog = ({ blog }) => {
 
   return (
     <div>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="Content-Language" content="en" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/icon.png" />
+        <link rel="apple-touch-icon" href="/icon.png" />
+        <meta name="description" content="Start learninig with Illumidesk Blog." />
+        <title>ILLUMIDESK | BLOG</title>
+      </Head>
+
       <Banner
         title="Blog"
         subtitle=""
@@ -20,7 +31,7 @@ const Blog = ({ blog }) => {
         <div className={styles.blogfirstCol}>
           {blogs && blogs.map(blog =>
           (
-            <div key={blog.title} className={styles.blogItem}>
+            <div key={blog.id} className={styles.blogItem}>
               <img className={styles.blogEntryImg} src={blog.image.url} alt={blog.title} />
               <h3>{blog.title}</h3>
               <p>{blog.previewContent}</p>
@@ -59,7 +70,7 @@ const Blog = ({ blog }) => {
 export default Blog
 
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   try {
     const req = await fetch("https://api-us-east-1.graphcms.com/v2/ckvbhd3dw0cs901y04kmdehj1/master", {
       method: "POST",
@@ -68,6 +79,7 @@ export async function getStaticProps() {
         query: `
         query{
           blogs{
+            id
             title
             slug
             previewContent
@@ -81,6 +93,8 @@ export async function getStaticProps() {
     })
     const res = await req.json()
     const { data } = res
+
+    // console.log(data)
 
     return {
       props: {

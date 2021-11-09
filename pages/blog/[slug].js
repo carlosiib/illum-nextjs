@@ -12,7 +12,6 @@ const BlogPost = ({ blog }) => {
         <meta httpEquiv="Content-Language" content="en" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-
         <link rel="icon" href="/icon.png" />
         <link rel="apple-touch-icon" href="/icon.png" />
 
