@@ -57,44 +57,44 @@ const BlogPost = ({ blog }) => {
 
 export default BlogPost
 
-export async function getStaticPaths() {
-  const req = await fetch("https://api-us-east-1.graphcms.com/v2/ckvbhd3dw0cs901y04kmdehj1/master", {
-    method: "POST",
-    headers: { "Content-type": "application/json" },
-    body: JSON.stringify({
-      query: `
-        query{
-          blogs{
-            title
-            slug
-            previewContent
-            image {
-              url
-            }
-          }  
-        }        
-        `
-    })
-  })
-  const res = await req.json()
+// export async function getStaticPaths() {
+//   const req = await fetch("https://api-us-east-1.graphcms.com/v2/ckvbhd3dw0cs901y04kmdehj1/master", {
+//     method: "POST",
+//     headers: { "Content-type": "application/json" },
+//     body: JSON.stringify({
+//       query: `
+//         query{
+//           blogs{
+//             title
+//             slug
+//             previewContent
+//             image {
+//               url
+//             }
+//           }  
+//         }        
+//         `
+//     })
+//   })
+//   const res = await req.json()
 
-  const paths = res.data.blogs.map((post) => {
-    return {
-      params: {
-        slug: `${post.slug}`
-      }
-    }
-  })
+//   const paths = res.data.blogs.map((post) => {
+//     return {
+//       params: {
+//         slug: `${post.slug}`
+//       }
+//     }
+//   })
 
-  return {
-    paths,
-    fallback: false
-  }
+//   return {
+//     paths,
+//     fallback: false
+//   }
 
 
-}
+// }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const { params } = context
   const slug = params.slug
 
@@ -121,7 +121,7 @@ export async function getStaticProps(context) {
   })
   const res = await req.json()
   const { data } = res
-  console.log(res)
+  //console.log(data)
 
   return {
     props: {
