@@ -94,8 +94,6 @@ export async function getServerSideProps() {
     const res = await req.json()
     const { data } = res
 
-    // console.log(data)
-
     return {
       props: {
         blog: data

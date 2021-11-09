@@ -1,0 +1,31 @@
+[
+  {
+  "faq": [
+      {
+          "id": 1,
+          "question": "What personal data does IllumiDesk store?",
+          "answer": "When accessing IllumiDesk from an LMS administrators have the option to install the tool in public or private mode. When private, IllumiDesk only stores opaque (anonymous) user ids. When the public, IllumiDesk syncs the username and the email address with the LMS."
+      },
+      {
+          "id": 2,
+          "question": "Can I use my existing content with IllumiDesk?",
+           "answer": "Absolutely! You can either upload your files using the standard Jupyter file manager interface for IllumiDesk's git-based tools to clone, fetch, and merge content from external git repositories."
+      },
+      {
+          "id": 3,
+          "question": "Does IllumiDesk support the Learning Interoperability Standard (LTI)?",
+          "answer": "Yes. IllumiDesk is an active member of IMS Global (https://www.imsglobal.org/) and has a valid LTI v1.3 certification for Core, Names and Role Provisioning Services, Deep Linking, and Assignment and Grade Services."
+      },
+      {
+          "id": 4,
+          "question": "Can I request refund?",
+          "answer": "Unfortunately, not. We do not issue full or partial refunds."
+      },
+      {
+        "id": 5,
+        "question": "What Payment Gateway does IllumiDesk use?",
+        "answer": "IllumiDesk relies on Stripe for all payment processing. At no time does IllumiDesk have access to the customer's payment information."
+    }
+  ]
+}
+]
