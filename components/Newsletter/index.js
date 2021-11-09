@@ -51,7 +51,7 @@ const Newsletter = () => {
             <p className="successSubmission">Success!</p>
           )}
         </div>
-        <img src="/svg/newsletter-person.svg" alt="Join the community with Illumidesk newsletter" height="450" />
+        <img src="/svg/newsletter-person.svg" alt="Join the community with Illumidesk newsletter" height="450" width="430" />
       </div>
     </section>
   );

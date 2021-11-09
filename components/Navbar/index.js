@@ -43,8 +43,8 @@ const Navbar = () => {
     <>
       <div className={`navbarContainer ${scroll > headerTop ? "is-sticky" : ""}`}>
         <div>
-          <Link href="/">
-            <a >
+          <Link alt="Illumidesk logo" href="/" >
+            <a datadesktop="true">
               <NavbarLogo width="198" height="80" alt="Illumidesk logo" />
             </a>
           </Link>
@@ -112,7 +112,7 @@ const Navbar = () => {
       <div className={`mobileNavbar is-sticky`}>
         <div>
           <Link href="/">
-            <a alt="Illumidesk logo">
+            <a alt="Illumidesk logo" datamobile="true">
               <NavbarLogo width="198" height="80" alt="Illumidesk logo" />
             </a>
           </Link>
