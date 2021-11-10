@@ -46,10 +46,11 @@ const BlogPost = ({ blog }) => {
 export default BlogPost
 
 export async function getServerSideProps(context) {
+  const GRAPHCMS_API_KEY = process.env.GRAPHCMS_API_KEY;
   const { params } = context
   const slug = params.slug
 
-  const req = await fetch("https://api-us-east-1.graphcms.com/v2/ckvbhd3dw0cs901y04kmdehj1/master", {
+  const req = await fetch(`${GRAPHCMS_API_KEY}`, {
     method: "POST",
     headers: { "Content-type": "application/json" },
     body: JSON.stringify({
