@@ -13,8 +13,6 @@ const Pricing = () => {
         subtitle="Select the solution that best fits your needs."
         path="svg/banner-instructor-learner.svg"
         alt="Instructors and learners"
-        width="540"
-        height="520"
       />
       <PricingCards />
       <FAQ />

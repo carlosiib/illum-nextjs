@@ -25,8 +25,6 @@ const Blog = ({ blog }) => {
         subtitle=""
         path="svg/banner-instructor-learner.svg"
         alt="Instructors and learners"
-        width="540"
-        height="520"
       />
       <div className={styles.blogContainer}>
         <div className={styles.blogfirstCol}>

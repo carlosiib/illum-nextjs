@@ -554,8 +554,9 @@ footer {
 
 @media (max-width: 991px) {
   .mainContainer {
-    padding-top: 6rem;
+    padding: 6rem 0.6rem 0 0.6rem;
   }
+
   .navbarContainer {
     display: none;
   }

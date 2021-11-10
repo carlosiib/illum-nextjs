@@ -33,8 +33,6 @@ export default function Home() {
         subtitle="Interactive teaching and learning concept powered by web-enabled Data Science Notebooks."
         path="svg/banner-instructor-learner.svg"
         alt="Instructors and learners"
-        width="540"
-        height="520"
         isMobile={isMobile}
       />
       {isMobile ? <StartAcademyMobile /> : <StartAcademyDesktop />}
