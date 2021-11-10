@@ -13,7 +13,6 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   const isMobile = useMediaQuery("(max-width: 991px)")
-  console.log(process.env.API_KEY)
   console.log(process.env.NEXT_PUBLIC_ANALYTICS_ID)
   return (
     <div className={styles.container}>
