@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import BlogSideBar from '../../components/BlogSideBar'
 import styles from '../../styles/Blog.module.css'
 
 const BlogPost = ({ blog }) => {
@@ -34,19 +35,7 @@ const BlogPost = ({ blog }) => {
           <hr className="box-line-dashed"></hr>
         </div>
         <div className={styles.blogSecondCol}>
-          <div>
-            <h3>Search</h3>
-            <input type="text" placeholder="Type your keywords" />
-          </div>
-          <div >
-            <h3>Popular Post</h3>
-          </div>
-          <div>
-            <h3>Categories</h3>
-          </div>
-          <div>
-            <h3>Tags</h3>
-          </div>
+          <BlogSideBar />
         </div>
 
       </div >
