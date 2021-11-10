@@ -35,6 +35,7 @@ export default function Home() {
         alt="Instructors and learners"
         width="540"
         height="520"
+        isMobile={isMobile}
       />
       {isMobile ? <StartAcademyMobile /> : <StartAcademyDesktop />}
       <FreeTrial source="main" />
