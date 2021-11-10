@@ -58,8 +58,10 @@ export default Blog
 
 
 export async function getServerSideProps() {
+  const GRAPHCMS_API_KEY = process.env.GRAPHCMS_API_KEY;
+
   try {
-    const req = await fetch("https://api-us-east-1.graphcms.com/v2/ckvbhd3dw0cs901y04kmdehj1/master", {
+    const req = await fetch(`${GRAPHCMS_API_KEY}`, {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({
